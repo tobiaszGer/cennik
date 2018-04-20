@@ -1,0 +1,21 @@
+<div class="col-md-12 text-center" ng-controller="Ctrl" >
+
+
+	<select (change)="onKey($event)" ng-model="mySelect" ng-change="showSelectValue(mySelect)" class="form-control form-control-lg">
+	  <option value="0">Wybierz projekt</option>
+	  <option value="Strona internetowa">Strona internetowa</option>
+	  <option value="Sklep intrentowy">Sklep internetowy</option>
+	  <option value="Inna aplikacja">Inna aplikacja</option>
+	</select>
+
+<div class="row">
+	<div class="col-md-12" *ngIf="show">
+		<div>Wybrany projekt:<strong>{{projekt}}</strong> </div>
+		<div *ngIf="show" class="btn btn-success">Przejdź dalej</div>
+
+	</div>
+</div>
+
+
+
+</div>

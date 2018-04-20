@@ -10,3 +10,8 @@
 }
 
 html,body { height: 100%; margin: 0px; padding: 0px; }
+.pytania{
+	background-color: #fff;
+	padding: 30px;
+	margin-top: 20px;
+}
